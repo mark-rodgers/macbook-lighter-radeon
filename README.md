@@ -1,20 +1,20 @@
-# mackbook-lighter
+# mackbook-lighter-radeon
 
 MacBook keyboard and screen backlight adjust on the ambient light.
-Internally, macbook-lighter reads the following files:
+Internally, macbook-lighter-radeon reads the following files:
 
 * /sys/devices/platform/applesmc.768/light
-* /sys/class/backlight/intel_backlight/brightness
-* /sys/class/backlight/intel_backlight/max_brightness
+* /sys/class/backlight/radeon_bl0/brightness
+* /sys/class/backlight/radeon_bl0/max_brightness
 * /sys/class/leds/smc::kbd_backlight/brightness
 * /sys/class/leds/smc::kbd_backlight/max_brightness
 
-So you're expected to install corresponding Nvidia/Intel drivers first.
+So you're expected to install corresponding Radeon/Intel drivers first.
 
 ## Setup
 
 All commands including macbook-lighter-kbd, macbook-lighter-screen
-will be available with sudo previledge once macbook-lighter finished install.
+will be available with sudo privilege once macbook-lighter-radeon finished install.
 
 To use in non-root environment such as [xbindkeys](https://wiki.archlinux.org/index.php/Xbindkeys),
 it's recommended to setup an "udev" rule to allow users in the
@@ -45,12 +45,11 @@ macbook-lighter-screen --inc 50
 # Set screen backlight to max
 macbook-lighter-screen --max
 # start auto adjust daemon
-systemctl start macbook-lighter
+systemctl start macbook-lighter-radeon
 # start auto adjust interactively, root previlege needed
 macbook-lighter-ambient
 ```
 
 ## Tested MacBook Versions
 
-* MacBook Pro Late 2013 (11,1)
-* Macbook Air 2012
+* MacBook Pro Mid 2015 (11,5)

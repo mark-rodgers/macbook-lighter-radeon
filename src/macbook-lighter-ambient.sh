@@ -3,14 +3,14 @@
 lid_dev="/proc/acpi/button/lid/LID0/state";
 light_dev="/sys/devices/platform/applesmc.768/light";
 power_dev="/sys/class/power_supply/ADP1/online";
-screen_dev="/sys/class/backlight/intel_backlight/brightness";
+screen_dev="/sys/class/backlight/radeon_bl0/brightness";
 kbd_dev="/sys/class/leds/smc::kbd_backlight/brightness";
-screen_max=$(cat /sys/class/backlight/intel_backlight/max_brightness);
+screen_max=$(cat /sys/class/backlight/radeon_bl0/max_brightness);
 kbd_max=$(cat /sys/class/leds/smc::kbd_backlight/max_brightness);
 
 #####################################################
 # Settings
-[ -f /etc/macbook-lighter.conf ] && source /etc/macbook-lighter.conf
+[ -f /etc/macbook-lighter-radeon.conf ] && source /etc/macbook-lighter-radeon.conf
 ML_DURATION=${ML_DURATION:-1.5}
 ML_FRAME=${ML_DURATION:-0.017}
 ML_INTERVAL=${ML_INTERVAL:-5}
