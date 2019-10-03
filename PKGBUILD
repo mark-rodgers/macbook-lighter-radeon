@@ -1,7 +1,7 @@
 # Maintainer: harttle <yangjvn@126.com>
 # Inspired by lighter, many thanks to Janhouse's perl script https://github.com/Janhouse/lighter
 pkgname=macbook-lighter-radeon
-pkgver=v0.0.2.5.g112c1f0
+pkgver=v0.0.2.8.gfad9e95
 pkgrel=1
 pkgdesc="Macbook screen/keyboard backlight CLI and auto-adjust on ambient light for Radeon GPUs"
 arch=(any)
