@@ -1,8 +1,8 @@
 set -e
 
-device='/sys/class/backlight/radeon_bl0/brightness'
+device='/sys/class/backlight/gmux_backlight/brightness'
 current=`cat $device`
-max=`cat /sys/class/backlight/radeon_bl0/max_brightness`
+max=`cat /sys/class/backlight/gmux_backlight/max_brightness`
 
 screen_help () {
     echo 'Usage: macbook-lighter-screen <OPTION> [NUM]'

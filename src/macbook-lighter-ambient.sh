@@ -3,9 +3,9 @@
 lid_dev="/proc/acpi/button/lid/LID0/state";
 light_dev="/sys/devices/platform/applesmc.768/light";
 power_dev="/sys/class/power_supply/ADP1/online";
-screen_dev="/sys/class/backlight/radeon_bl0/brightness";
+screen_dev="/sys/class/backlight/gmux_backlight/brightness";
 kbd_dev="/sys/class/leds/smc::kbd_backlight/brightness";
-screen_max=$(cat /sys/class/backlight/radeon_bl0/max_brightness);
+screen_max=$(cat /sys/class/backlight/gmux_backlight/max_brightness);
 kbd_max=$(cat /sys/class/leds/smc::kbd_backlight/max_brightness);
 
 #####################################################
