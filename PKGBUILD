@@ -9,8 +9,6 @@ url="https://github.com/mark-rodgers/macbook-lighter-radeon"
 license=('GPL')
 depends=('bc')
 makedepends=('git')
-provides=()
-conflicts=()
 source=('git+https://github.com/mark-rodgers/macbook-lighter-radeon.git')
 md5sums=('SKIP')
 
