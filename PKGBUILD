@@ -1,5 +1,5 @@
-# Maintainer: harttle <yangjvn@126.com>
-# Inspired by lighter, many thanks to Janhouse's perl script https://github.com/Janhouse/lighter
+# Maintainer: Mark Rodgers <mark@marknrodgers.com>
+# Inspired by macbook-lighter, many thanks to https://github.com/harttle/macbook-lighter
 pkgname=macbook-lighter-radeon
 pkgver=v0.0.2.9.g0050e61
 pkgrel=1
